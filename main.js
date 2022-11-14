@@ -16,16 +16,20 @@ document.body.appendChild(p1);
 
 const arr = ["find elements in the DOM (<b>5 points</b>);", "create/add/remove elements (<b>5 points</b>);", "change content of the elements (<b>5 points</b>);", "change styles of the elements (<b>5 points</b>);", "change attributes of the elements (<b>5 points</b>);", "change classes of the elements (<b>5 points</b>)."];
 let ul = document.createElement("ul");
-ul.setAttribute('id', 'theList');
 for (i = 0; i <arr.length; i++) {
     var li = document.createElement('li');     
     li.innerHTML = arr[i];
     ul.appendChild(li);
     if (i % 2 == 0) {
         li.style.color = "green"
+        li.classList.add = "even"
+        console.log(li.classList)
     }
     else {
         li.style.color = "purple"
+        li.classList.add = "odd"
+        console.log(li.classList)
+
     }
 }
 document.body.appendChild(ul);
@@ -53,17 +57,19 @@ document.body.appendChild(p3);
 
 const arr_1 = ["Create a new repository on Github, named <b>lab12</b> (<b>1 point</b>).", "Clone this repository to your local machine and work inside it.", "Create a new HTML file, called <b>index.html</b>, which has only one &lt;h1&gt; tag with &quotHello, World!&quot message (<b>1 point</b>).", "Create a new JavaScript file, called <b>main.js</b>, which must contain your program (assignment) described above (<b>1 point</b>).", "Link this <b>main.js</b> file to your <b>index.html</b> file (Note: place your script at the end of the <b>body</b> section).", "Write a JavaScript program in <b>main.js</b> to make your <b>index.html</b> look identical to this HTML file (<b>5 points</b>).", "After you finish your work, submit it to the Github (<b>2 points</b>)."];
 let ul_1 = document.createElement("ul");
-ul_1.classList.add("submission");
-console.log(ul_1.classList);
 for (i = 0; i < arr_1.length; i++) {
     var li_1 = document.createElement('li');     
     li_1.innerHTML = arr_1[i];
     ul_1.appendChild(li_1);
     if (i % 2 == 0) {
         li_1.style.color = "green"
+        li_1.classList.add = "even"
+        console.log(li_1.classList)
     }
     else {
         li_1.style.color = "purple"
+        li_1.classList.add = "odd"
+        console.log(li_1.classList)
     }
 }
 document.body.appendChild(ul_1);
